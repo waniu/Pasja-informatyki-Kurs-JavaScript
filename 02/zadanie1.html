@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8"/>
+        
+        <script>
+            function sprawdz()
+            {
+                var liczba = document.getElementById("pole").value;
+                
+                if (liczba>0) document.getElementById("wynik").innerHTML="dodatnia";
+                else if (liczba<0) document.getElementById("wynik").innerHTML="ujemna";
+                else if (liczba=="") document.getElementById("wynik").innerHTML="Nie bądź taki! Wpisz coś =)";
+                else if (liczba==0) document.getElementById("wynik").innerHTML="0 to zero!!";
+                else document.getElementById("wynik").innerHTML="To nie jest liczba!";
+            }
+            
+        
+        </script>
+        
+    </head>
+    <body>
+        <input type="text" id="pole"/>
+        <input type="submit" value="Sprawdź" onclick="sprawdz()"/>
+        
+        <div id="wynik"></div>
+        
+    </body>
+</html>
